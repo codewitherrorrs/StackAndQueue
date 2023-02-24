@@ -11,11 +11,43 @@ namespace StackAndQueue
             stack.Push(30); 
             stack.Push(56);
 
-            foreach(var i in stack)
+            foreach (var i in stack)
             {
-                Console.Write(i + " ");
+                Console.WriteLine("Before Pop : " + i);
             }
-            Console.WriteLine("\n Top of stack : {0}",stack.Peek());
+            Console.WriteLine("\nTop of the stack : {0}",stack.Peek());
+            Console.WriteLine("********************");
+           
+            stack.Pop();
+
+            foreach (var i in stack)
+            {
+                Console.WriteLine("After Pop : " + i);
+            }
+            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
+            Console.WriteLine("********************");
+
+            stack.Pop();
+
+            foreach (var i in stack)
+            {
+                Console.WriteLine("After Pop : " + i);
+            }
+            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
+            Console.WriteLine("********************");
+
+            stack.Pop();
+
+            foreach (var i in stack)
+            {
+                Console.WriteLine("After Pop : " + i);
+            }
+            stack.Pop();
+            Console.WriteLine("Stack Was Empty");
+            Console.WriteLine("********************");
+
+
         }
+
     }
 }
