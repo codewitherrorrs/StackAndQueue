@@ -6,45 +6,38 @@ namespace StackAndQueue
     {
         public static void Main(string[] args)
         {
-            Stack stack = new Stack();
-            stack.Push(70);
-            stack.Push(30); 
-            stack.Push(56);
+            Queue q1 = new Queue();
+            q1.Enqueue(56);
+            q1.Enqueue(30);
+            q1.Enqueue(70);
 
-            foreach (var i in stack)
+            foreach (var i in q1)
             {
-                Console.WriteLine("Before Pop : " + i);
+                Console.WriteLine("Before Dequeue : " + i);
             }
-            Console.WriteLine("\nTop of the stack : {0}",stack.Peek());
-            Console.WriteLine("********************");
-           
-            stack.Pop();
+            Console.WriteLine("\nTop of the stack : {0}",q1.Peek());
+            Console.WriteLine("************************");
 
-            foreach (var i in stack)
+          /*  q1.Dequeue();
+
+            foreach (var i in q1)
             {
-                Console.WriteLine("After Pop : " + i);
+                Console.WriteLine("After Dequeue : " + i);
             }
-            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
-            Console.WriteLine("********************");
+            Console.WriteLine("\nTop of the stack : {0}", q1.Peek());
+            Console.WriteLine("************************");
 
-            stack.Pop();
+            q1.Dequeue();
 
-            foreach (var i in stack)
+            foreach (var i in q1)
             {
-                Console.WriteLine("After Pop : " + i);
+                Console.WriteLine("After Dequeue : " + i);
             }
-            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
-            Console.WriteLine("********************");
+            Console.WriteLine("\nTop of the stack : {0}", q1.Peek());
+            Console.WriteLine("************************");
 
-            stack.Pop();
-
-            foreach (var i in stack)
-            {
-                Console.WriteLine("After Pop : " + i);
-            }
-            stack.Pop();
-            Console.WriteLine("Stack Was Empty");
-            Console.WriteLine("********************");
+            q1.Dequeue();
+            Console.WriteLine("Queue Was Empty"); */
 
 
         }
