@@ -7,16 +7,17 @@ namespace StackAndQueue
         public static void Main(string[] args)
         {
             //Console.WriteLine("");
+            LinkedList list= new LinkedList();
             Stack stack = new Stack();
             stack.Push(70);
             stack.Push(30); 
             stack.Push(56);
 
-            foreach(var i in stack)
+            foreach(int i in stack)
             {
-                Console.Write(i + " ");
+                list.Add(i);
             }
-            Console.WriteLine("\n Top of stack : {0}",stack.Peek());
+            Console.WriteLine("\nTop of stack : {0}",stack.Peek());
         }
     }
 }
